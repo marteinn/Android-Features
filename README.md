@@ -23,9 +23,18 @@ After that you need to include the utility and run createInstance when your app 
     public class YourApplication extends Application {
         @Override
         public void onCreate() {
-            Features.createInstance(this,
-                    R.raw.features_app_debug,
-                    R.raw.features_app);
+            Features.createInstance().load(this,
+                R.raw.features_app_debug,
+                R.raw.features_app);
+        }
+    }
+
+You can also skip the validation part and load the features file directly.
+
+    public class YourApplication extends Application {
+        @Override
+        public void onCreate() {
+            Features.createInstance().load(this, R.raw.features_app_debug);
         }
     }
 
