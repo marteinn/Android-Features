@@ -61,7 +61,6 @@ public class Features {
 
     /**
      * Loads and parses features from resource.
-     * is on.
      * @param context
      * @param debugResource
      * @param liveResource
