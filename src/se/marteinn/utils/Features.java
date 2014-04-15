@@ -24,6 +24,9 @@ public class Features {
     private Properties mProperties;
     private static Features sInstance;
 
+    /**
+     * Retrive singleton instance.
+     */
     static public Features getInstance() {
         return sInstance;
     }
@@ -52,7 +55,6 @@ public class Features {
             int liveResource) {
 
         int resourceId = 0;
-        Properties parsedProperties = null;
 
         // Check either live or debug resource
         resourceId = ! isDebuggable(context) ? liveResource : debugResource;
