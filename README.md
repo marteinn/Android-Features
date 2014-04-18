@@ -46,3 +46,8 @@ Then implement the feature by running something like this:
     if (Features.getInstance().hasFeature("YOURFEATURE")) {
         // Feature is enabled, do stuff!
     }
+
+
+## License
+
+Android-Features is released under the [MIT License](http://www.opensource.org/licenses/MIT).
