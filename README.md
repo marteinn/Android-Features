@@ -47,6 +47,10 @@ Then implement the feature by running something like this:
         // Feature is enabled, do stuff!
     }
 
+## Contributing
+
+Want to contribute? Awesome. Just send a pull request.
+
 
 ## License
 
