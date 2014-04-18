@@ -102,6 +102,15 @@ public class Features {
     }
 
     /**
+     * Set feature flag at runtime.
+     * @param name
+     * @param status
+     */
+    public void setFeature(String name, Boolean status) {
+        mProperties.setProperty(name, status ? "1" : "0");
+    }
+
+    /**
      * Check if app is running with debuggable on.
      * Inspiration/code from: http://bit.ly/1gmLMm3
      * @param context
