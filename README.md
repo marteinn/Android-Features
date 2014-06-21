@@ -5,7 +5,7 @@ Features is a utility class for Android that helps you manage the features of yo
 
 ## How it works
 
-Features loads and parses .properties files placed in **res/raw** of your application (it loads a debug file if debuggable is true), then uses a singleton pattern to front a hasFeature method that enables you to check if a feature is enabled or not.
+Features loads and parses .properties files placed in **res/raw** of your application (it loads a debug file if debuggable is true), then uses a singleton pattern to front a hasFeature method that allows you to check if a feature is enabled or not.
 
 ## Implementation
 
@@ -41,7 +41,7 @@ You can also skip the validation part and load the features file directly.
 
 
 
-Then implement the feature by running something like this:
+Finally implement the feature checking by running something like this:
 
     if (Features.getInstance().hasFeature("YOURFEATURE")) {
         // Feature is enabled, do stuff!

@@ -79,7 +79,7 @@ public class Features {
         } catch (NotFoundException e) {
             System.err.println("Could not find features resource: "+e);
         } catch (IOException e) {
-            System.err.println("Failed to features file: "+e);
+            System.err.println("Failed to open features file: "+e);
         }
 
         mProperties = parsedProperties;
