@@ -1,4 +1,4 @@
-package se.marteinn.utils;
+package se.marteinn.utils.features;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -18,8 +18,6 @@ import android.content.res.Resources.NotFoundException;
  *
  */
 public class Features {
-    public static final String TAG = Features.class.toString();
-
     // Members
     private Properties mProperties;
     private static Features sInstance;
