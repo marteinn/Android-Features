@@ -46,6 +46,25 @@ Finally implement the feature checking by running something like this:
     if (Features.getInstance().hasFeature("YOURFEATURE")) {
         // Feature is enabled, do stuff!
     }
+    
+## Setup
+
+#### Locally
+
+Download [features.aar](https://github.com/marteinn/Android-Features/blob/master/dist/features.aar) and move it to your libs folder, then make sure you got libs specified as a flatDir in `gradle.config`
+	
+	repositories {
+	    mavenCentral()
+	    flatDir {
+	        dirs 'libs'
+	    }
+	}
+
+After that just include it as any other dependency.
+ 
+	dependencies {
+		compile 'se.marteinn.utils.features:features:1.1.1@aar'
+	}
 
 ## Contributing
 
